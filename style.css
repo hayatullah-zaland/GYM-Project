@@ -408,3 +408,93 @@
   padding-top: 10px;
   color: var(--texts-color);
 }
+
+#trainers{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding-top: 30px;
+  color: var(--texts-color);
+}
+#trainers h1{
+  padding-top: 20px;
+
+}
+.trainer-title{
+  width: 100%;
+  display: contents;
+  height: 30px;
+  background-color: #999;
+}
+.trainers-cards{
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.trainer-card{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 250px;
+  height: 350px;
+  background-color: var(--bg-color);
+  overflow: hidden;
+  box-shadow: 0 0 2px  0.1px var(--texts-color);
+  border-radius: 10px;
+}
+.trainer-card::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: calc(-100% + 5px);
+  width: 100%;
+  height: 100%;
+  background-color: #b955ef;
+  transition: 1s;
+}
+.trainer-card:hover::before{
+  bottom: 0;
+}
+.trainer-image{
+  width: 100%;
+  max-width: 220px;
+  height: 200px;
+  border-radius: 15px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 0;
+}
+.trainer-card h3{
+  z-index: 1;
+  color: gold;
+}
+.trainer-card h4{
+  z-index: 1;
+}
+.trainer-card .contact-btn{
+  width: 120px;
+  height: 30px;
+  background-color: var(--red-color);
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 15px;
+  transition: .3s ease;
+  cursor: pointer;
+  position: absolute;
+  bottom: 15px;
+}
+.trainer-card .contact-btn:hover{
+  background-color: var(--yello-color);
+  color: black;
+}
+.trainer-card .contact-btn a{
+  color: var(--texts-color);
+  text-decoration: none;
+}
