@@ -553,3 +553,36 @@ th {
   background-color: var(--red-color);
   color: white;
 }
+
+
+#gallery-part{
+  width: 100%;
+  height: 75%;
+  background-color: var(--background-iamge);
+}
+#gallery-part h1{
+  color: var(--texts-color);
+  padding-top: 20px;
+  margin-top: 50px ;
+  text-align: center;
+}
+.gallery-images{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.gallery-images .image{
+  width: 100%;
+  max-width: 355px;
+  background-position: center;
+  background-size: cover;
+  height: 250px;
+  border-radius: 15px;
+  margin-top: 50px;
+}
+.image:hover{
+  transform: scale(1.05);
+}
+
