@@ -667,3 +667,83 @@ form button:hover{
     width: 300px;
 }
 }
+
+.footer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  box-shadow: 0 0 1px var(--texts-color);
+  position: relative;
+}
+.footer .icons{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.footer .icons .icon{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: pink;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .icons .icon:hover{
+  box-shadow: 0 0 18px 5px dodgerblue; 
+}
+.Q-links ul{
+  display: flex;
+  flex-wrap: wrap;      
+  list-style: none;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+.Q-links ul li a{
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 16px;
+  color: var(--texts-color);
+  box-shadow: 0 0 2px var(--texts-color);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+.Q-links ul li a:hover{
+  color: #c00;
+}
+
+.Q-links ul li:hover{
+  transform: translateY(3px);
+}
+@media (max-width: 768px){
+  .Q-links ul{
+    flex-direction: column; 
+    align-items: center;
+    gap: 12px;
+  }
+
+  .Q-links ul li a{
+    width: 100%;              
+    text-align: center;
+  }
+}
+.footer p{
+  font-size: 20px;
+  padding-top: 35px;
+  bottom: 5px;
+  color: var(--texts-color);
+}
+.footer p span{
+  color: var(--yello-color);
+}
+@media (max-width: 768px){
+  .footer p{
+    text-align: center;
+  }
+}
